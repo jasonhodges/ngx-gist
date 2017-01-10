@@ -1,0 +1,41 @@
+{
+  "name": "ng2-gist",
+  "version": "0.0.0-development",
+  "description": "Angular 2 Component for embedding a gist within an Angular site",
+  "main": "bundles/ng2-gist.umd.js",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "prepublish": "tsc",
+    "build": "rm -rf lib && tsc -p src"
+  },
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonhodges/ng2-gist.git"
+  },
+  "keywords": [
+    "angular2",
+    "typescript",
+    "gist",
+    "angular2-gist"
+  ],
+  "author": "Jason Hodges <jasonlhodges@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasonhodges/ng2-gist/issues"
+  },
+  "homepage": "https://github.com/jasonhodges/ng2-gist#readme",
+  "devDependencies": {
+    "typescript": "^2.1.4",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "@angular/common": "^2.4.2",
+    "@angular/compiler": "^2.4.2",
+    "@angular/core": "^2.4.2",
+    "rxjs": "^5.0.3",
+    "zone.js": "^0.7.4"
+  }
+}
