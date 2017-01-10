@@ -1,0 +1,1 @@
+exports.ng2Gist = require('./lib/ng2-gist.component').ng2Gist;
