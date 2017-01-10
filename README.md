@@ -1,4 +1,5 @@
 # ng2-gist
+[![Build Status](https://travis-ci.org/jasonhodges/ng2-gist.svg?branch=master)](https://travis-ci.org/jasonhodges/ng2-gist)
 Angular 2 Component for embedding a gist within an Angular site
 
 ## Code Example
