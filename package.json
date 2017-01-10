@@ -5,7 +5,6 @@
   "main": "bundles/ng2-gist.umd.js",
   "module": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "prepublish": "tsc",
     "build": "rm -rf lib && tsc -p src"
