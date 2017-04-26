@@ -7,6 +7,7 @@
   "scripts": {
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "prepublish": "tsc",
+    "commit": "npm run prepublish && git-cz",
     "build": "rm -rf lib && tsc -p src"
   },
   "typings": "./index.d.ts",
@@ -26,10 +27,12 @@
   "bugs": {
     "url": "https://github.com/jasonhodges/ngx-gist/issues"
   },
-  "homepage": "https://github.com/jasonhodges/ngx-gist#readme",
+  "homepage": "https://github.com/jasonhodges/ngx-gist",
   "devDependencies": {
+    "cz-conventional-changelog": "^2.0.0",
     "typescript": "^2.1.4",
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "semantic-release": "^6.3.2"
   },
   "dependencies": {
     "@angular/common": "^4.0.3",
@@ -37,5 +40,10 @@
     "@angular/core": "^4.0.3",
     "rxjs": "^5.0.3",
     "zone.js": "^0.8.9"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
