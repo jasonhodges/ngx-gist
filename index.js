@@ -1,1 +1,1 @@
-exports.ng2Gist = require('./lib/ng2-gist.component').ng2Gist;
+exports.ngxGist = require('./lib/ngx-gist.component').ngxGist;

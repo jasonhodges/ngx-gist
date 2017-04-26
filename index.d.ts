@@ -1,1 +1,1 @@
-export * from './lib/ng2-gist.component';
+export * from './lib/ngx-gist.component';

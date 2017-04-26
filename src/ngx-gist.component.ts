@@ -1,14 +1,14 @@
 import {Component, Input, ViewChild, ElementRef, AfterViewInit} from '@angular/core';
 
 @Component({
-  selector: 'ng2-gist',
+  selector: 'ngx-gist',
   template:`
     <iframe #iframe type="text/javascript" width="100%" frameborder="0"></iframe>
   `,
   styleUrls: []
 })
 
-export class ng2Gist implements AfterViewInit {
+export class ngxGist implements AfterViewInit {
   @ViewChild('iframe') iframe:ElementRef;
   @Input() gistId;
 

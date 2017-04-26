@@ -1,20 +1,20 @@
-# ng2-gist
-Angular 2 Component for embedding a gist within an Angular site
+# ng-gist
+Angular 4 Component for embedding a gist within an Angular site
 
-[![Build Status](https://travis-ci.org/jasonhodges/ng2-gist.svg?branch=master)](https://travis-ci.org/jasonhodges/ng2-gist) 
+[![Build Status](https://travis-ci.org/jasonhodges/ng-gist.svg?branch=master)](https://travis-ci.org/jasonhodges/ng-gist) 
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 
 ## Code Example
 
-In order to use the component in your Angular 2 project after installation, follow these steps:
+In order to use the component in your Angular 4 project after installation, follow these steps:
 
-- Declare `ng2Gist` within app.module.ts
+- Declare `ngGist` within app.module.ts
 
  ```@NgModule({
     declarations: [
       AppComponent,
-      ng2Gist
+      ngGist
     ],
     imports: [
       BrowserModule,
@@ -26,17 +26,17 @@ In order to use the component in your Angular 2 project after installation, foll
   })
   export class AppModule { }
   ```
-- Use the `ng2-gist` component in any template files by using the `ng2-gist` tag along with username and gistId 
+- Use the `ng-gist` component in any template files by using the `ng-gist` tag along with username and gistId 
 ```html
-<ng2-gist [gistId]="'{username}/{gistId}'"></ng2-gist>
+<ng-gist [gistId]="'{username}/{gistId}'"></ng-gist>
 ```
 
 ## Motivation
-This project was initiated after a search for an Angular 2 component of its kind returned no results.
+This project was initiated after a search for an Angular 4 component of its kind returned no results.
 
 ## Installation
 
-`npm i --save ng2-gist`
+`npm i --save ng-gist`
 
 ## Contributors
 

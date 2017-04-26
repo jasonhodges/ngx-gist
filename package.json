@@ -1,8 +1,8 @@
 {
-  "name": "ng2-gist",
+  "name": "ngx-gist",
   "version": "1.0.0",
-  "description": "Angular 2 Component for embedding a gist within an Angular site",
-  "main": "bundles/ng2-gist.umd.js",
+  "description": "Angular 4 Component for embedding a gist within an Angular site",
+  "main": "bundles/ngx-gist.umd.js",
   "module": "index.js",
   "scripts": {
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
@@ -12,29 +12,30 @@
   "typings": "./index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jasonhodges/ng2-gist.git"
+    "url": "https://github.com/jasonhodges/ngx-gist.git"
   },
   "keywords": [
-    "angular2",
+    "angular",
+    "angular 4",
     "typescript",
     "gist",
-    "angular2-gist"
+    "ngx-gist"
   ],
   "author": "Jason Hodges <jasonlhodges@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jasonhodges/ng2-gist/issues"
+    "url": "https://github.com/jasonhodges/ngx-gist/issues"
   },
-  "homepage": "https://github.com/jasonhodges/ng2-gist#readme",
+  "homepage": "https://github.com/jasonhodges/ngx-gist#readme",
   "devDependencies": {
     "typescript": "^2.1.4",
     "webpack": "^1.14.0"
   },
   "dependencies": {
-    "@angular/common": "^2.4.2",
-    "@angular/compiler": "^2.4.2",
-    "@angular/core": "^2.4.2",
+    "@angular/common": "^4.0.3",
+    "@angular/compiler": "^4.0.3",
+    "@angular/core": "^4.0.3",
     "rxjs": "^5.0.3",
-    "zone.js": "^0.7.4"
+    "zone.js": "^0.8.9"
   }
 }
