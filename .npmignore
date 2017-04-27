@@ -12,4 +12,6 @@ Thumbs.db
 
 docs
 src
+lib
+tools
 *.ngfactory.ts

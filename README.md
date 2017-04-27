@@ -6,17 +6,20 @@ Angular 4 Component for embedding a gist within an Angular site
 
 In order to use the component in your Angular 4 project after installation, follow these steps:
 
-- Declare `ngxGist` within app.module.ts
-
- ```@NgModule({
+- Declare `NgxGistModule` within app.module.ts
+```typescript
+import { NgxGistModule } from 'ngx-gist/dist/ngx-gist.module';
+```
+ ```typescript
+  @NgModule({
     declarations: [
-      AppComponent,
-      ngxGist
+      AppComponent
     ],
     imports: [
       BrowserModule,
       FormsModule,
-      HttpModule
+      HttpModule,
+      NgxGistModule
     ],
     providers: [],
     bootstrap: [AppComponent]
