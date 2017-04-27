@@ -2,18 +2,19 @@
   "name": "ngx-gist",
   "version": "1.0.0",
   "description": "Angular 4 Component for embedding a gist within an Angular site",
-  "main": "bundles/ngx-gist.umd.js",
-  "module": "index.js",
+  "main": "ngx-gist.bundle.js",
+  "jsnext:main": "ngx-gist.module.js",
+  "module": "mgx-gist.module.js",
+  "types": "ngx-gist.module.d.ts",
   "scripts": {
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "prepublish": "tsc",
-    "commit": "npm run prepublish && git-cz",
-    "build": "rm -rf lib && tsc -p src"
+    "commit": "git-cz",
+    "build": "rimraf dist && tsc -p tsconfig-esm.json && rollup -c rollup.config.js dist/ngx-gist.module.js > dist/ngx-gist.bundle.js && cp package.json dist && ts-node tools/cleanup.ts && ngc && cp README.md dist"
   },
-  "typings": "./index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jasonhodges/ngx-gist.git"
+    "url": "git+https://github.com/jasonhodges/ngx-gist.git"
   },
   "keywords": [
     "angular",
@@ -28,17 +29,30 @@
     "url": "https://github.com/jasonhodges/ngx-gist/issues"
   },
   "homepage": "https://github.com/jasonhodges/ngx-gist",
-  "devDependencies": {
-    "cz-conventional-changelog": "^2.0.0",
-    "typescript": "^2.1.4",
-    "webpack": "^1.14.0",
-    "semantic-release": "^6.3.2"
+  "peerDependencies": {
+    "@angular/core": ">=4.0.0"
   },
-  "dependencies": {
-    "@angular/common": "^4.0.3",
-    "@angular/compiler": "^4.0.3",
-    "@angular/core": "^4.0.3",
+  "devDependencies": {
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/platform-server": "^4.0.0",
+    "@types/node": "^7.0.14",
+    "rimraf": "^2.6.1",
+    "cz-conventional-changelog": "^2.0.0",
+    "rollup": "^0.41.6",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^1.0.2",
     "rxjs": "^5.0.3",
+    "semantic-release": "^6.3.2",
+    "tslint": "^5.1.0",
+    "typescript": "^2.1.5",
+    "uglify-js": "^2.8.22",
+    "webpack": "^1.14.0",
     "zone.js": "^0.8.9"
   },
   "config": {

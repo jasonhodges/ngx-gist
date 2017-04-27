@@ -1,1 +1,0 @@
-exports.ngxGist = require('./lib/ngx-gist.component').ngxGist;

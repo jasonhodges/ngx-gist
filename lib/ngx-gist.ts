@@ -8,11 +8,9 @@ import {Component, Input, ViewChild, ElementRef, AfterViewInit} from '@angular/c
   styleUrls: []
 })
 
-export class ngxGist implements AfterViewInit {
+export class NgxGist implements AfterViewInit {
   @ViewChild('iframe') iframe:ElementRef;
   @Input() gistId;
-
-  constructor() { }
 
   ngAfterViewInit() {
     this.iframe.nativeElement.id = 'gist-' + this.gistId;
