@@ -51,6 +51,8 @@
     "semantic-release": "^6.3.2",
     "tslint": "^5.1.0",
     "typescript": "^2.1.5",
+    "ts-helpers": "^1.1.2",
+    "ts-node": "^3.0.2",
     "uglify-js": "^2.8.22",
     "webpack": "^1.14.0",
     "zone.js": "^0.8.9"
