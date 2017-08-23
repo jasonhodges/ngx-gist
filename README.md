@@ -42,6 +42,7 @@ This project was initiated after a search for an Angular 4 component of its kind
 `npm i --save ngx-gist`
 
 ## Contributors
+[<img src="https://avatars1.githubusercontent.com/u/1988476?v=4" width="100px;"/><br /><sub>Jason Hodges</sub>](https://github.com/jasonhodges)<br />[📖](https://github.com/jasonhodges/ngx-gist/commits?author=jasonhodges "Documentation")
 [<img src="https://avatars2.githubusercontent.com/u/17721520?v=4" width="100px;"/><br /><sub>Rahul Singh</sub>](https://github.com/rahulrsingh09)<br />[📖](https://github.com/jasonhodges/ngx-gist/commits?author=rahulrsingh09 "Documentation")
 ## License 
 MIT
