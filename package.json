@@ -50,7 +50,7 @@
     "rxjs": "^5.0.3",
     "semantic-release": "^6.3.2",
     "tslint": "^5.1.0",
-    "typescript": "^2.1.5",
+    "typescript": "^2.4.2",
     "ts-helpers": "^1.1.2",
     "ts-node": "^3.0.2",
     "uglify-js": "^2.8.22",
