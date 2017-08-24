@@ -33,7 +33,7 @@ import { NgxGistModule } from 'ngx-gist/dist/ngx-gist.module';
 ```html
 <ngx-gist [gistId]="'{username}/{gistId}'"></ngx-gist>
 ```
-Updated Support For Particular File in a gist
+- Updated Support For Particular File in a gist
 ```html
 <ngx-gist [gistId]="'{username}/{gistId}'" [file] = "'<name of the file in gist>'"></ngx-gist>
 ```
